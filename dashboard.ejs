@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container py-5">
+        <h1 class="mb-3">Dashboard</h1>
+        <p>Welcome, <%= user.username %> (<%= user.role %>)</p>
+
+        <div class="mb-3">
+            <a href="/profile" class="btn btn-outline-primary me-2">View Profile</a>
+            <a href="/logout" class="btn btn-danger">Logout</a>
+        </div>
+
+        <hr>
+
+        <h4 class="mt-4">Your Logs</h4>
+        <div class="mb-4">
+            <a href="/view-foods" class="btn btn-primary me-2">View Food Log</a>
+            <a href="/view-exercises" class="btn btn-success">View Exercise Log</a>
+        </div>
+    </div>
+</body>
+</html>
+
